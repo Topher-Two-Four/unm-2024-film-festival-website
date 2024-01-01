@@ -142,10 +142,16 @@ h3 {
 
 p {
     line-height: 1.5;
+    padding: 1rem;
 }
 
 a:any-link {
     color: var(--LINK-COLOR);
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 a:hover,
@@ -294,13 +300,17 @@ a:active {
     text-align: center;
 }
 
-.footer_h2 {
+.footer__h2 {
     position: sticky;
     bottom: 0;
     background-color: var(--HEADER-BGCOLOR);
     color: var(--HEADER-COLOR);
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
     text-align: center;
+}
+
+.footer__p {
+    padding: 0rem;
 }
 
 /* || MAIN */
@@ -473,24 +483,19 @@ tr {
     
 }
 
-.container__p {
-    padding-top: 0.2rem;
-    padding-bottom: 1rem;
-}
+/* || FLEX CONTENT */
 
-.text__content {
+.flextext__content {
     width: 60%;
-    padding: 1rem;
-    /* Add additional styling as needed */
 }
 
-.image__content {
+.fleximage__content {
     width: 40%;
-    /* Add additional styling as needed */
 }
 
-.image__content img {
+.fleximage__content img {
     width: 100%;
     height: auto;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
 }
