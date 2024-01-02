@@ -493,7 +493,6 @@ tr {
     font-size: 24px;
 }
 
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -568,4 +567,29 @@ tr {
 
 .fleximagebar__container img {
     width: 30vh;
+}
+
+.flexsocialmediabar__container {
+    display: grid;
+    grid-template-areas: "im im im im im im im";
+    column-gap: 0.5rem;
+    grid-area: im;
+    grid-template-columns: repeat(0, 1fr 2fr);
+    gap: 0.5rem;
+    margin-left: 1rem;
+}
+
+.flexsocialmediabar__container h1 {
+    width: 10vh;
+    height: auto;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000;
+    text-decoration: underline;
+}
+
+.flexsocialmediabar__container img {
+    width: 10vh;
+    height: auto;
 }
