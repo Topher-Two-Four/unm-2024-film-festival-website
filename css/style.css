@@ -112,6 +112,21 @@ textarea {
     text-decoration: underline;
 }
 
+.castlist {
+    line-height: 1rem;
+    margin: 2rem;
+}
+
+.castlist h1{
+    font-size: 24px;
+}
+
+.castlist li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+
 /* || GENERAL STYLES */
 
 html {
@@ -149,7 +164,6 @@ h3 {
 
 h4 {
     font-size: 14px;
-    font-style: oblique;
     font-weight: lighter;
     text-align: center;
     padding-top: 0.4rem;
@@ -309,7 +323,6 @@ a:active {
 /* || FOOTER */
 
 .footer {
-    position: sticky;
     bottom: 0;
     background-color: var(--HEADER-BGCOLOR);
     color: var(--HEADER-COLOR);
@@ -318,7 +331,6 @@ a:active {
 }
 
 .footer__h2 {
-    position: sticky;
     bottom: 0;
     background-color: var(--HEADER-BGCOLOR);
     color: var(--HEADER-COLOR);
@@ -495,8 +507,19 @@ tr {
 
 .container {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;   
+}
+
+.container__p {}
+
+.container ul {
+    padding: 1rem;
+}
+
+.container__returnlink {
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-family: var(--FF-HEADINGS);
 }
 
 /* || FLEX CONTENT */
@@ -576,7 +599,7 @@ tr {
     grid-area: im;
     grid-template-columns: repeat(0, 1fr 2fr);
     gap: 0.5rem;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 .flexsocialmediabar__container h1 {
@@ -586,7 +609,7 @@ tr {
     text-align: center;
     font-weight: bold;
     text-shadow: #000;
-    text-decoration: underline;
+    line-height: 1.2rem;
 }
 
 .flexsocialmediabar__container img {
