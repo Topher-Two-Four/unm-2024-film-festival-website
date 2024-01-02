@@ -55,6 +55,8 @@ textarea {
     --ATTENDINGNAV-BGCOLOR: #8a387c;
     --PRESSNAV-BGCOLOR: #ed8b00;
 
+    --BORDER2-COLOR: #ba0c2f; /* UNM "Cherry" color */
+
     /* BORDERS */
     --BORDERS: 1px solid var(--BORDER-COLOR);
     --BORDER-RADIUS: 15px;
@@ -106,6 +108,10 @@ textarea {
     text-align: center;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 /* || GENERAL STYLES */
 
 html {
@@ -132,6 +138,7 @@ h2,
 h3 {
     font-family: var(--FF-HEADINGS);
     letter-spacing: 0.1em;
+    text-align: center;
 }
 
 h2,
@@ -140,9 +147,18 @@ h3 {
     color: var(--HIGHLIGHT-COLOR);
 }
 
+h4 {
+    font-size: 14px;
+    font-style: oblique;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 0.4rem;
+}
+
 p {
     line-height: 1.4rem;
-    padding: 1rem 0.8rem 0.2rem 0.8rem;
+    padding: 1rem 0.8rem 0.2rem 1.6rem;
+    font-size: 16px;
 }
 
 a:any-link {
@@ -494,6 +510,15 @@ tr {
     width: 40%;
 }
 
+.flextext__content h1 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 1rem;
+    font-weight: bold;
+    text-shadow: #000;
+    text-decoration: underline;
+}
+
 .fleximage__content img {
     width: 100%;
     height: auto;
@@ -503,21 +528,32 @@ tr {
 
 .fleximage__poster {
     width: 40%;
+    padding: 1rem;
 }
 
 .fleximage__poster img {
     width: 100%;
-    height: 450px;
-    padding-top: 1rem;
-    padding-right: 1rem;
+    height: 400px;
+    border: thick ridge var(--BORDER2-COLOR);
+    margin-bottom: 0.2rem;
 }
 
 .fleximage__poster iframe {
     width: 100%;
-    min-height: 12vw;
+    min-width: 10vw;
+    min-height: 8vw;
+    aspect-ratio: 3/2;
     height: auto;
-    padding-top: 1rem;
-    padding-right: 1rem;
+    border: thick ridge var(--BORDER2-COLOR);
+    margin-top: 0.8rem;
+}
+
+.fleximage__poster figcaption {
+    font-family: var(--FF-HEADINGS);
+    font-style: oblique;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 14px;
 }
 
 .fleximagebar__container {
