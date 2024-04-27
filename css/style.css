@@ -434,6 +434,8 @@ tr {
 }
 
 .schedule__header,
+.schedule__h2,
+
 .schedule__item {
     width: 100%;
     padding: 0.3rem;
