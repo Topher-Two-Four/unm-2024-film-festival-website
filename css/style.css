@@ -559,7 +559,7 @@ tr {
     width: 40%;
 }
 
-.flextext__content h1, h2, h3, h4 {
+.flextext__content h1, h2, h3, h4, h5 {
 
     text-align: left;
     padding-left: 1rem;
@@ -579,7 +579,7 @@ tr {
 }
 
 .flextext__content h3 {
-    font-size: 22px;
+    font-size: 16px;
     padding-top: 0;
 }
 
@@ -587,9 +587,18 @@ tr {
     font-size: 20px;
     font-weight: normal;
     padding-top: 1rem;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
     text-align: right;
     text-decoration: underline;
+}
+
+.flextext__content h5 {
+    font-size: 16px;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    text-align: right;
+    font-style: italic;
+    font-weight: normal;
 }
 
 .flextext__content p {
