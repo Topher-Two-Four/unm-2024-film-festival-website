@@ -203,6 +203,7 @@ a:active {
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: #00aeff;
 }
 
 .header__h1 {
@@ -285,7 +286,7 @@ a:active {
 }
 
 .tab-link:target {
-    background-color: #4CAF50;
+    background-color: rgb(89, 101, 137);
     color: white;
 }
 

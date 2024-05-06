@@ -1,14 +1,23 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
+document.addEventListener('DOMContentLoaded', () => {
+  const accordions = document.querySelectorAll('.accordion');
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
+  accordions.forEach(accordion => {
+      accordion.addEventListener('click', function () {
+          // Check if the current accordion is already active
+          const isActive = this.classList.contains('active');
+
+          // Close all accordions
+          accordions.forEach(acc => {
+              acc.classList.remove('active');
+              acc.nextElementSibling.style.maxHeight = null;
+          });
+
+          // Toggle the current accordion
+          if (!isActive) {
+              this.classList.add('active');
+              const panel = this.nextElementSibling;
+              panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+      });
   });
-}
+});
