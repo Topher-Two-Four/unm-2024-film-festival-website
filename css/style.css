@@ -34,11 +34,11 @@ textarea {
     --BGCOLOR-FADE: rgb(252, 220, 160);
     --BGCOLOR: rgb(118,34,22);
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
-    --BODY-BGCOLOR: #FFF;
+    --BODY-BGCOLOR: rgb(177,83,32);
     --BORDER-COLOR: #333;
     --BUTTON-COLOR: #FFF;
     --FONT-COLOR: #000;
-    --HEADER-BGCOLOR:#ba0c2f; /* UNM "Cherry" color */
+    --HEADER-BGCOLOR: #00aeff; /* UNM "Cherry" color */
     --HEADER-COLOR: #FFF;
     --HERO-BGCOLOR: #ba0c2f; /* UNM "Cherry" color */
     --HERO-COLOR: #ffffff;
@@ -73,11 +73,11 @@ textarea {
     :root {
         --BGCOLOR-FADE: gray;
         --BGCOLOR: #000;
-        --BODY-BGCOLOR: rgb(118,34,22);
+        --BODY-BGCOLOR: rgba(196, 83, 83, 0.802);
         --BORDER-COLOR: whitesmoke;
         --BUTTON-COLOR: #000;
         --FONT-COLOR: whitesmoke;
-        --HEADER-COLOR: whitesmoke;
+        --HEADER-COLOR: rgb(0, 0, 0);
         --HERO-COLOR: #ffffff;
         --HIGHLIGHT-COLOR: whitesmoke;
         --LINK-ACTIVE: rgb(252, 200, 103);
@@ -345,6 +345,7 @@ a:active {
 
 .footer__p {
     padding: 0rem;
+    font-size: 24px;
 }
 
 /* || MAIN */
@@ -386,8 +387,6 @@ tr {
         "bc4 bc4"
         "bc5 bc5"
         "bc6 bc6"
-        "bc7 bc7"
-        "bc8 bc8"
         "cs cs";
 
     gap: 0.2rem;
@@ -411,7 +410,7 @@ tr {
 .schedule__cs,
 .schedule__header {
     color: var(--HIGHLIGHT-COLOR);
-    font-weight: bold;
+    font-weight: normal;
     font-size: 20px;
     height: 100%;
     display: grid;
@@ -421,6 +420,7 @@ tr {
 .schedule__h1 {
     text-align: center;
     font-size: 38px;
+    margin-bottom: 0.6em;
 }
 
 .schedule__header,
@@ -429,11 +429,13 @@ tr {
     width: 100%;
     padding: 0.3rem;
     border: medium ridge var(--BORDER-COLOR);
+    font-size: 22px;
+    text-align: center;
 }
 
 .schedule__item {
     display: grid;
-    place-content: left;
+    text-align: left;
     padding: 0.5rem;
     font-size: 24px;
 }
@@ -441,6 +443,7 @@ tr {
 .schedule__h2 {
     width: 100%;
     text-align: center;
+    padding: 0;
     font-size: 32px;
 }
 
@@ -472,7 +475,7 @@ tr {
 .contentbody__cs,
 .contentbody__header {
     color: var(--HIGHLIGHT-COLOR);
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 20px;
     height: 100%;
     display: grid;
@@ -482,7 +485,7 @@ tr {
 .contentbody__header,
 .contentbody__item {
     width: 100%;
-    padding: 0.3rem;
+    padding: 0rem;
     border: medium ridge var(--BORDER-COLOR);
 }
 
@@ -523,7 +526,7 @@ tr {
 .container__p {}
 
 .container ul {
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .container__returnlink {
@@ -668,7 +671,7 @@ tr {
 }
 
 .accordion {
-    background-color: #eee;
+    background-color: rgb(80, 146, 105);
     color: #444;
     cursor: pointer;
     padding: 18px;
@@ -676,12 +679,12 @@ tr {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 32px;
     transition: 0.4s;
   }
   
   .active, .accordion:hover {
-    background-color: #0c7d5d;
+    background-color: whitesmoke;
   }
   
   .accordion:after {
