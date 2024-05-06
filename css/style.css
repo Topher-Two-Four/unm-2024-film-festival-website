@@ -32,7 +32,7 @@ textarea {
 
     /* COLORS */
     --BGCOLOR-FADE: rgb(252, 220, 160);
-    --BGCOLOR: orange;
+    --BGCOLOR: rgb(118,34,22);
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
     --BORDER-COLOR: #333;
@@ -48,7 +48,7 @@ textarea {
     --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
     --NAV-BGCOLOR: #FFF;
 
-    --HOMENAV-BGCOLOR: gray ;
+    --HOMENAV-BGCOLOR: rgb(202,200,176);
     --FESTIVALNAV-BGCOLOR: #ffc600;
     --PRODUCTIONSNAV-BGCOLOR: #007a86;
     --GETTINGHERENAV-BGCOLOR: #c05131;
@@ -73,7 +73,7 @@ textarea {
     :root {
         --BGCOLOR-FADE: gray;
         --BGCOLOR: #000;
-        --BODY-BGCOLOR: #333;
+        --BODY-BGCOLOR: rgb(118,34,22);
         --BORDER-COLOR: whitesmoke;
         --BUTTON-COLOR: #000;
         --FONT-COLOR: whitesmoke;
@@ -388,30 +388,10 @@ tr {
         "bc6 bc6"
         "bc7 bc7"
         "bc8 bc8"
-        "bc9 bc9"
-        "bc10 bc10"
-        "bc11 bc11"
-        "bc12 bc12"
-        "bc13 bc13"
-        "bc14 bc14"
-        "bc15 bc15"
-        "bc16 bc16"
-        "bc17 bc17"
-        "bc18 bc18"
-        "bc19 bc19"
-        "bc20 bc20"
-        "bc21 bc21"
-        "bc22 bc22"
-        "bc23 bc23"
-        "bc24 bc24"
-        "bc25 bc25"
-        "bc26 bc26"
-        "bc27 bc27"
-        "bc28 bc28"
         "cs cs";
 
-    gap: 0.3rem;
-    margin-bottom: 1em;
+    gap: 0.2rem;
+    margin-bottom: 0.5em;
 }
 
 .schedule__cr {
@@ -438,6 +418,11 @@ tr {
     place-content: center;
 }
 
+.schedule__h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
 .schedule__header,
 .schedule__h2,
 .schedule__item {
@@ -449,22 +434,19 @@ tr {
 .schedule__item {
     display: grid;
     place-content: left;
-    padding: 0.2rem;
-    font-size: 16px;
+    padding: 0.5rem;
+    font-size: 24px;
 }
 
 .schedule__h2 {
     width: 100%;
     text-align: center;
-    padding: 0;
-    padding-top: 1rem;
     font-size: 32px;
 }
 
 .schedule__h3 {
     width: 100%;
     text-align: center;
-    padding: 0.2rem;
     font-size: 12px;
     font-weight: lighter;
     font-style: oblique;
