@@ -42,7 +42,7 @@ textarea {
     --HEADER-COLOR: #FFF;
     --HERO-BGCOLOR: #ba0c2f; /* UNM "Cherry" color */
     --HERO-COLOR: #ffffff;
-    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
+    --HIGHLIGHT-COLOR: whitesmoke;
     --LINK-ACTIVE: orange;
     --LINK-COLOR: #000;
     --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
@@ -76,10 +76,10 @@ textarea {
         --BODY-BGCOLOR: rgba(196, 83, 83, 0.802);
         --BORDER-COLOR: whitesmoke;
         --BUTTON-COLOR: #000;
-        --FONT-COLOR: whitesmoke;
+        --FONT-COLOR: #000;
         --HEADER-COLOR: rgb(0, 0, 0);
         --HERO-COLOR: #ffffff;
-        --HIGHLIGHT-COLOR: whitesmoke;
+        --HIGHLIGHT-COLOR: #000;
         --LINK-ACTIVE: rgb(252, 200, 103);
         --LINK-COLOR: whitesmoke;
         --LINK-HOVER: orange;
