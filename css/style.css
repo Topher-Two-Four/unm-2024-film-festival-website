@@ -416,7 +416,7 @@ tr {
 .schedule__cs,
 .schedule__header {
     color: var(--HIGHLIGHT-COLOR);
-    font-weight: normal;
+    font-weight: bold;
     font-size: 20px;
     height: 100%;
     display: grid;
@@ -456,7 +456,7 @@ tr {
 .schedule__h3 {
     width: 100%;
     text-align: center;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: lighter;
     font-style: oblique;
 }
@@ -539,6 +539,7 @@ tr {
     padding-bottom: 1.5rem;
     text-align: center;
     font-family: var(--FF-HEADINGS);
+    font-size: 24px;
 }
 
 /* || FLEX CONTENT */
